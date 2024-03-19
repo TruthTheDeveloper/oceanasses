@@ -1,4 +1,4 @@
-Link to the apk for android => https://drive.google.com/file/d/1EcZHg9edsyN-PRm_r2MCHqmOGiVUz3DG/view?usp=sharing
+
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ To start using the application, follow these steps:
 1. Download the code or clone the repository:
    
    ```bash
-   git clone https://github.com/Zucci-Daniel/health.git
+   git clone https://github.com/TruthTheDeveloper/oceanasses
    ```
 
 2. Install the necessary dependencies using either npm or Yarn:

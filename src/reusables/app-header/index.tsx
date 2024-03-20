@@ -4,6 +4,7 @@ import {CloseSvg} from '../../assets/svg';
 import {fs, wp} from '../../configs/config';
 import AppRow from '../app-row';
 import AppText from '../app-text';
+import { styles } from './styles';
 
 const AppHeader = ({
   leftContent,
@@ -24,14 +25,7 @@ const AppHeader = ({
 }) => {
   return (
     <View
-      style={{
-        height: 80,
-        backgroundColor,
-        justifyContent: 'center',
-        flexDirection: 'row',
-        alignItems: 'center',
-        padding: wp(10),
-      }}>
+      style={[styles.headerContainer, {backgroundColor}]}>
       <AppRow>
         <View style={{flex: 0.7}}>{leftContent}</View>
         {middleContent || (

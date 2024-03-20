@@ -4,7 +4,7 @@ import {AppTextTypes} from './type';
 
 const AppText = ({
   text = 'text',
-  color,
+  color = "black",
   styles,
   numberOfLines = 3,
   cap = false,

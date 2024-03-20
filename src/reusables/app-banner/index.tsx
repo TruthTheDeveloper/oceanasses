@@ -3,16 +3,14 @@ import {View} from 'react-native';
 import AppImage from '../app-Image';
 import AppText from '../app-text';
 import {fs} from '../../configs/config';
+import { styles } from '../app-button/styles';
+import { bannerPills } from './styles';
+
 
 const Banner = () => {
   return (
     <View
-      style={{
-        height: 150,
-        width: '100%',
-        borderRadius: 10,
-        overflow: 'hidden',
-      }}>
+      style={bannerPills.bannerContainer}>
       <AppImage
         mode="contain"
         extraStyles={{
@@ -22,15 +20,7 @@ const Banner = () => {
         uri="https://cdn.pixabay.com/photo/2022/05/23/08/12/woman-7215527_1280.png"
       />
       <View
-        style={{
-          padding: 10,
-          position: 'absolute',
-          bottom: 0,
-          right: 0,
-          left: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          alignItems: 'center',
-        }}>
+        style={bannerPills.bannerContent}>
         <AppText
           color="white"
           text="Comfort is good"

@@ -10,7 +10,7 @@ import {isIOS, wp} from '../../configs/config';
 import {appScreenStyles} from './styles';
 import {AppScreenProps} from './type';
 
-// TODO(Philip): Review the structure of this component with Zucci
+
 /**
  * @param isScrollable defaults to true
  * @param disableSafeArea defaults to false

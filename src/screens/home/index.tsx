@@ -25,23 +25,10 @@ const Header = () => {
 
   return (
     <View
-      style={{
-        height: 300,
-        width: '100%',
-        backgroundColor: 'blue',
-        borderRadius: 10,
-      }}>
+      style={styles.headerContainer}>
       <TouchableOpacity
         onPress={() => navigation.navigate(routes.LOCKER)}
-        style={{
-          position: 'absolute',
-          top: 10,
-          left: 10,
-          zIndex: 1,
-          backgroundColor: 'white',
-          borderRadius: 50,
-          padding: 10,
-        }}>
+        style={styles.headerContent}>
         <CloseSvg fill={'black'} height={30} width={30} />
       </TouchableOpacity>
       <AppImage uri="https://cdn.pixabay.com/photo/2022/05/23/08/12/woman-7215527_1280.png" />
@@ -52,13 +39,10 @@ const Header = () => {
 const Content = () => {
   return (
     <View
-      style={{
-        flex: 1,
-        gap: 20,
-        padding: wp(16),
-      }}>
+      style={styles.contentStyles}>
       <AppText fontSize={30} text="Introduction" />
       <AppText
+      color='black'
         fontSize={16}
         numberOfLines={10}
         text="lore afda salh asfh alsdhflask asfhalsdkfha lasfhalsdkfhalskdfhas fahslfkashdlfksdd,lore afda salh asfh alsdhflask asfhalsdkfha lasfhalsdkfhalskdfhas fahslfkashdlfksddlore afda salh asfh alsdhflask asfhalsdkfha lasfhalsdkfhalskdfhas fahslfkashdlfksdd,lore afda salh asfh alsdhflask asfhalsdkfha lasfhalsdkfhalskdfhas fahslfkashdlfksdd"
@@ -85,19 +69,12 @@ interface Props {
 const Benefit: React.FC<Props> = ({title, message}) => {
   return (
     <View
-      style={{
-        flexDirection: 'row',
-        gap: wp(10),
-        alignItems: 'center',
-      }}>
+      style={styles.benefitContainer}>
       <InfoSvg fill={'black'} />
       <View
-        style={{
-          flexDirection: 'row',
-          gap: 10,
-        }}>
-        <Text style={{marginRight: 10, fontSize: 20, fontWeight: '700'}}>
-          {`${title}: `}
+        style={styles.benefitStyle}>
+        <Text style={styles.benefitText}>
+          <AppText text={`${title}: `}/>
           <AppText text={message} fontSize={16} styles={{fontWeight: '300'}} />
         </Text>
       </View>

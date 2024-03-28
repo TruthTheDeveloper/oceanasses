@@ -31,7 +31,7 @@ const Header = () => {
         style={styles.headerContent}>
         <CloseSvg fill={'black'} height={30} width={30} />
       </TouchableOpacity>
-      <AppImage uri="https://cdn.pixabay.com/photo/2022/05/23/08/12/woman-7215527_1280.png" />
+      <AppImage uri="https://images.unsplash.com/photo-1617021483925-a331d536133d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
     </View>
   );
 };

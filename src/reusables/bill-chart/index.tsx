@@ -4,10 +4,10 @@ import {screenWidth} from '../../configs/Constants';
 
 const GroupedBarChartComponent = () => {
   const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+    labels: ['January', 'February', 'March'],
     datasets: [
       {
-        data: [5, 10, 15, 20, 25, 20],
+        data: [500, 1000, 2000, 4000, 6000],
       },
     ],
   };
